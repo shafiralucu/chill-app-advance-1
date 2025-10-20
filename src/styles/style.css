@@ -1,0 +1,46 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.masuk { background-image: url('/assets/Masuk.jpg'); }
+.daftar { background-image: url('/assets/Daftar.jpg'); }
+
+.container { width: 100%; padding: 20px; display: flex; justify-content: center; }
+.login-card { background-color: #18181d; padding: 30px 25px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); width: 100%; max-width: 400px; text-align: center; }
+.login-card h2 { margin-bottom: 20px; color: #ddd; }
+
+label { display: block; color: #ddd; text-align: left; }
+button { font-family: 'Lato', sans-serif; }
+
+.container_title { margin-top: 20px; margin-bottom: 5px; color: #ddd; }
+.atau { color: #ddd; margin-top: 5px; }
+
+.login-card input { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; }
+.login-card button { width: 100%; padding: 12px; background-color: #3D4142; border: none; border-radius: 8px; color: white; font-size: 16px; cursor: pointer; margin-top: 10px; }
+
+.link-text a { color: #ddd; font-weight: bolder; }
+.link-row { display: flex; justify-content: space-between; align-items: center; }
+.link-text, .forgot-password { margin: 0; color: #ddd; font-size: 10px; }
+.link-text { text-align: left; }
+.forgot-password { text-align: right; }
+
+.google-login img { width: 10px; height: 10px; margin-right: 10px; }
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-card { padding: 25px 20px; }
+  .login-card h2 { font-size: 22px; }
+}
+
+.toggle-password { position: absolute; top: 50%; right: 10px; transform: translateY(-50%); cursor: pointer; color: grey; font-size: 18px; }
+.input-pass { display: flex; align-items: center; gap: 10px; }
